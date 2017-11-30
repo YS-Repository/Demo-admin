@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--引入DTD约束-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 开始构建映射-->
+<mapper namespace="com.ys.dao.CommentDao">
+
+    <!--做SQL配置  select表示查询配置
+    id是当前映射的唯一标识
+    parameterType传入的数据类型
+    resultType 返回的数据类型  -->
+
+    <select id="getComment" parameterType="int" resultType="comment">
+      select * from comment where id=#{id};
+    </select>
+
+</mapper>
+
