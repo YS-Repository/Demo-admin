@@ -39,6 +39,10 @@
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
-		   <welcome-file>index.html</welcome-file
+<<<<<<< HEAD
+		   <welcome-file>hi.jsp</welcome-file
+=======
+		   <welcome-file>hello.html</welcome-file>
+>>>>>>> 7cbdd3aeb575cb76c01e17e63cee35cd292cf016
     </welcome-file-list>
 </web-app>
