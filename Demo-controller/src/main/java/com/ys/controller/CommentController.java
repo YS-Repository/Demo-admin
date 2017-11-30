@@ -1,6 +1,6 @@
 package com.ys.controller;
 
-import com.ys.CommentService;
+import com.ys.service.CommentService;
 import com.ys.domain.Comment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,5 +28,11 @@ public class CommentController {
 
         return "user/demo";
 
+    }
+
+    @RequestMapping("tx")
+    public String updateComment() {
+        commentService.updateComment(new Comment());
+        return "user/demo";
     }
 }

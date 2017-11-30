@@ -16,5 +16,10 @@
       select * from comment where id=#{id};
     </select>
 
+    <update id="updateComment" parameterType="comment">
+        UPDATE comment SET title=#{title} where id=#{id}
+    </update>
+
+
 </mapper>
 

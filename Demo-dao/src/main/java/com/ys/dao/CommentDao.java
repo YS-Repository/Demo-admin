@@ -1,7 +1,6 @@
 package com.ys.dao;
 
 import com.ys.domain.Comment;
-import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -13,7 +12,10 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface CommentDao {
-//    @Select("select * from comment where id=#{id}")
+    //    @Select("select * from comment where id=#{id}")
     public Comment getComment(Integer id);
+
+    //事务操作检验
+    public void updateComment(Comment comment);
 
 }
