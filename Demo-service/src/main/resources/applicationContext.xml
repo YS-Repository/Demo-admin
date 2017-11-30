@@ -32,5 +32,20 @@
         <property name="basePackage" value="com.ys.dao"></property>
     </bean>
 
+    <!--<bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+    <!--<property name="dataSource" value="dataSource"></property>-->
+    <!--</bean>-->
+
+    <!--<tx:advice id="advice1" transaction-manager="dataSourceTransactionManager">-->
+    <!--<tx:attributes>-->
+    <!--<tx:method name="*" propagation="REQUIRED" isolation="REPEATABLE_READ" rollback-for="Exception"-->
+    <!--read-only="false"/>-->
+    <!--</tx:attributes>-->
+    <!--</tx:advice>-->
+
+    <!--<aop:config>-->
+    <!--<aop:advisor advice-ref="advice1" pointcut="execution(* com.ys.service..*.*(..))"></aop:advisor>-->
+    <!--</aop:config>-->
+
 
 </beans>

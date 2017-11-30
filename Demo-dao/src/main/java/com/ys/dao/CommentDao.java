@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface CommentDao {
-    @Select("select * from comment where id=#{id}")
+//    @Select("select * from comment where id=#{id}")
     public Comment getComment(Integer id);
 
 }
